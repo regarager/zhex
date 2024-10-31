@@ -28,7 +28,7 @@ pub fn main() !void {
         std.process.exit(1);
     };
 
-    const rowWidth = 0x10;
+    const rowWidth = 0x20;
     const rows = bufsize / rowWidth;
     for (0..rows) |row| {
         print("{x:08} | ", .{row * rowWidth});
